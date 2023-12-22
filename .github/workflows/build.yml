@@ -38,7 +38,7 @@ jobs:
              cd ../../..
              mkdir twgsl_build
              cd twgsl_build
-             emcmake cmake ../twgsl
+             emcmake -DCMAKE_BUILD_TYPE=RELEASE cmake ../twgsl 
              emmake make twgsl
              mkdir ../twgsl/artifact
              cp ./Core/twgsl/twgsl.js ../twgsl/artifact/twgsl.js
